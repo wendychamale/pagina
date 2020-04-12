@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="app"> <!-- id="ng-app" IE<8 -->
+
+<head>
+ <title>PRACTICA1 GRUPO 8</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="img/style.css"  />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="javascript" href="js/bootstrap.min.js"/></script>
+    <script type="javascript" href="js/jquery-3.4.1.min.js"/></script>
+    <script type="text/javascript" async="" src="./p_files/watch.js.descarga"></script>
+    <script src="./p_files/jquery-1.8.3.js.descarga"></script>
+     <script src="./p_files/bootstrap.min.js.descarga"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta>
+  <link rel="shortcut icon" type="image/icon" href="img/favicon.png">
+</meta>
+</head>
+<body ng-controller="TestController" nv-file-drop uploader="uploader">
+  <app-root></app-root>
+ <div id="holder">
+<div id="header">
+<table>
+<tr>
+<td><h4>UPhotos</h4></td>
+<td style="padding:22px;">
+<button class="btn btn-danger" id="f">Inicio</button>
+<button class="btn btn-success" id="ver">Ver perfil</button>
+
+<a class="btn btn-primary" href="index.html">Salir</a>
+</td>
+<td style="padding:22px;">
+<h2 id="nuser"></h2>
+</td>
+<td>
+  <img src="img/user.jpg" height="80px"  width="80px" id="us">
+</td>
+</tr>
+</table>
+</div>
+
+<div id="menu"  > <img src="img/esquina.png" width="150" height="80" alt="img" title="img" />
+<div class="clear"></div>
+<div id="content" style=" height: 2000px;color: #FF5733; background: #00acee; max-width: 1245px; margin: 10px auto;  padding: 15px; ">
+    <div class="block" style=" color: #FF5733; background: #00acee; max-width: 1245px; margin: 10px auto;  padding: 15px; ">
+    
+          <div id="output" style="box-shadow: 0px 2px 5px 5px #ec731e; height: 107px;  color: #FF5733; background: #ec731e; max-width: 960px; margin: 10px auto;  padding: -15px; float: left;">
+           <table>
+             <tr>
+               <td>
+                  <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Publicacion nueva</span>
+                  </div>
+                  <textarea id="texto" class="form-control" aria-label="With textarea"></textarea>
+                </div> 
+                <input type="file" class="btn btn-danger" style="font-size:12px;"name="font" id="font" value="Subir foto">
+                 <button class="btn btn-success"  id="enviar">Publicar</button>
+               </td>
+               <td>
+                <img src="img/user.jpg" height="80px"  width="80px"  id="photo" alt="photo">
+                <p id="confirmado"></p>
+              </td>
+             </tr>
+           </table>
+         </div>
+
+            <div id="amigos" style=" border-radius:5%;width: 14rem; padding: .5em;color: #1BC204; background: #1BC204; float: right;">
+            </div>
+    </div>
+
+    <div id="publicar" style=" height: 265px; max-width: 960px; ">
+     
+  
+  
+    </div>
+   
+</div>
+</div>
+</body>
+
+<script src="home.js"></script>
+
+  
+
+</html>

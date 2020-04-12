@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="app"> <!-- id="ng-app" IE<8 -->
+
+<head>
+    <title>PRACTICA2 GRUPO 8</title>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="img/style.css"  />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="javascript" href="js/bootstrap.min.js"/></script>
+<script type="javascript" href="js/jquery-3.4.1.min.js"/></script>
+<script type="text/javascript" async="" src="./p_files/watch.js.descarga"></script>
+<script src="./p_files/jquery-1.8.3.js.descarga"></script>
+ <script src="./p_files/bootstrap.min.js.descarga"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<meta>
+  <link rel="shortcut icon" type="image/icon" href="img/favicon.png">
+</meta>
+
+</head>
+<body ng-controller="TestController" nv-file-drop uploader="uploader">
+  <app-root></app-root>
+  <div id="holder">
+    <div id="header">
+      <table>
+      <tr>
+      <td><h4>UPhotos</h4></td>
+      <td style="padding:22px;">
+      <a class="btn btn-danger" href="index.html">Login</a>
+      <a class="btn btn-success" href="registro.html">Registro</a>
+      
+      </tr>
+      </table>
+      </div>
+
+      <div id="menu" > <img src="img/esquina.png" width="150" height="80" alt="img" title="img" />
+        <div class="clear"></div>
+        <div id="content">
+        <div class="block">
+    <div id="output" style="height: 600px;  color: #FF5733; background: #00acee; max-width: 1000px; margin: 10px auto;  padding: 15px; ">
+      <h4>Registro</h4>
+ 
+      <table>
+        <tr>
+          <td>
+            <form style="width:280px; height: 200px;" method="post" action="52.87.157.53:3000/registro_sin_foto">
+              <label">Nombre Completo</label>
+              <div class="input-group mb-3">
+         <span class="input-group-text" id="basic-addon1">@</span>
+         <input type="text" class="form-control" id="nombrec" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>       
+              <label">Usuario</label>
+                     <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" id="user" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                   </div>
+                   <div class="form-group">
+                     <label for="exampleInputPassword1" >Password</label>
+                     <input type="password" defaultVal="" class="form-control" id="contra">
+         
+                     <label for="exampleInputPassword1" >Confirmar Password</label>
+                     <input type="password" defaultVal="" class="form-control" id="contrac">
+                    <p id="confirmado"></p>
+                   </div>
+                   <button id="ingreso" type="submit" class="btn btn-danger"> Registrar</button>
+                 </form>
+          </td>
+          <td>
+            <form>
+              <img src="img/user.jpg" height="190px"  id="photo" alt="photo">
+               <canvas id="canvas" style="display: none;"></canvas>
+                  <canvas id="canvas"></canvas>
+
+                  <input type="file" class="btn btn-danger" style="font-size:12px;"name="font" id="font" value="Seleccionar archivo">  
+                 
+            </form>
+          </td>
+
+        </tr>
+      </table>
+      
+
+       
+
+
+   </div>
+  </div>
+</div>
+      </div>
+  </div>
+  <script src="registrou.js"></script>
+</body>
+</html>
