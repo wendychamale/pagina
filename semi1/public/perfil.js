@@ -41,7 +41,7 @@ $(window).load(function(){
 
 
   function obtenerdatos() {
-  var ruta="http://3.136.97.121:3000/obtener_datos";
+  var ruta="http://10.0.2.66:3000/obtener_datos";
   let xmlhttp = new XMLHttpRequest(); 
   xmlhttp.open("POST", ruta,true);
   xmlhttp.setRequestHeader("Content-Type", "application/json"); 
@@ -116,11 +116,11 @@ ev.preventDefault();
 var si="";
 if(!nombre && !base && !extension && us ){
 //ruta="http://52.87.157.53:3000/registro_sin_foto"
-  ruta="http://3.136.97.121:3000/actualizar_sin_foto"
+  ruta="http://10.0.2.66:3000/actualizar_sin_foto"
   console.log("actualizar sin foto");
   si="si";
 }else if(nombre && base && extension && us){
-  ruta="http://3.136.97.121:3000/actualizar_con_foto"
+  ruta="http://10.0.2.66:3000/actualizar_con_foto"
   console.log("actualizar con foto");
   si="si";
 }else{
@@ -180,7 +180,7 @@ console.log(vjson);
    console.log("logueeeea");
 
   let xmlhttp = new XMLHttpRequest(); 
-   xmlhttp.open("POST", "http://3.136.97.121:3000/login");
+   xmlhttp.open("POST", "http://10.0.2.66:3000/login");
    xmlhttp.setRequestHeader("Content-Type", "application/json"); 
    let obj = {"user":use,"password":con};
    let jsonData = JSON.stringify(obj);

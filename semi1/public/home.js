@@ -81,7 +81,7 @@ ver.addEventListener('click', function(ev){
 
 
   function obtenerpublicaciones() {
-    var ruta="http://3.136.97.121:3000/obtener_publicaciones";
+    var ruta="http://10.0.2.66:3000/obtener_publicaciones";
     let xmlhttp = new XMLHttpRequest(); 
     xmlhttp.open("POST", ruta,true);
     xmlhttp.setRequestHeader("Content-Type", "application/json"); 
@@ -168,15 +168,15 @@ enviar.addEventListener('click', function(ev){
     var ruta="";
   var si="";
   if(!nombre && !base && !extension && texto ){
-    ruta="http://3.136.97.121:3000/publicacion_texto"
+    ruta="http://10.0.2.66:3000/publicacion_texto"
     console.log("publicacion sin foto");
     si="si";
   }else if(nombre && base && extension && !texto){
-    ruta="http://3.136.97.121:3000/publicacion_imagen"
+    ruta="http://10.0.2.66:3000/publicacion_imagen"
     console.log("publicacion con foto");
     si="si";
   }else{
-    ruta="http://3.136.97.121:3000/publicacion"
+    ruta="http://10.0.2.66:3000/publicacion"
     console.log("publicacion completa");
     si="si";
   }
