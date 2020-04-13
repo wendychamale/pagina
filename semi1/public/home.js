@@ -81,7 +81,7 @@ ver.addEventListener('click', function(ev){
 
 
   function obtenerpublicaciones() {
-    var ruta="10.0.2.66:3000/obtener_publicaciones";
+    var ruta="http://3.16.38.99:3000/obtener_publicaciones";
     let xmlhttp = new XMLHttpRequest(); 
     xmlhttp.open("POST", ruta,true);
     xmlhttp.setRequestHeader("Content-Type", "application/json"); 
