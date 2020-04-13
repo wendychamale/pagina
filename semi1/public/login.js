@@ -14,7 +14,11 @@ ingreso.addEventListener('click', function(ev){
      console.log("login");
 
     let xmlhttp = new XMLHttpRequest(); 
+<<<<<<< HEAD
      xmlhttp.open("POST", "http://3.16.38.99:3000/login");
+=======
+     xmlhttp.open("POST", "http://10.0.2.66:3000/login");
+>>>>>>> 358b40fe4efeb04e77c82c4121b1f70bff518e96
      xmlhttp.setRequestHeader("Content-Type", "application/json"); 
      let obj = {"user":us,"password":con};
      let jsonData = JSON.stringify(obj);

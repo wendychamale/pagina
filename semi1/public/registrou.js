@@ -49,7 +49,11 @@ if(con==conc){
 var si="";
 if(!nombre && !base && !extension && us && con ){
 //ruta="http://52.87.157.53:3000/registro_sin_foto"
+<<<<<<< HEAD
   ruta="http://3.16.38.99:3000/registro_sin_foto"
+=======
+  ruta="http://10.0.2.66:3000/registro_sin_foto"
+>>>>>>> 358b40fe4efeb04e77c82c4121b1f70bff518e96
   console.log("registro sin foto");
   si="si";
 }else if(nombre && base && extension && us){
