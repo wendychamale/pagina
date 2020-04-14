@@ -168,15 +168,15 @@ enviar.addEventListener('click', function(ev){
     var ruta="";
   var si="";
   if(!nombre && !base && !extension && texto ){
-    ruta="10.0.2.66:3000/publicacion_texto"
+    ruta="http://3.16.38.99:3000/publicacion_texto"
     console.log("publicacion sin foto");
     si="si";
   }else if(nombre && base && extension && !texto){
-    ruta="10.0.2.66:3000/publicacion_imagen"
+    ruta="http://3.16.38.99:3000/publicacion_imagen"
     console.log("publicacion con foto");
     si="si";
   }else{
-    ruta="10.0.2.66:3000/publicacion"
+    ruta="http://3.16.38.99:3000/publicacion"
     console.log("publicacion completa");
     si="si";
   }
