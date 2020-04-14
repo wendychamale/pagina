@@ -115,11 +115,11 @@ if(con==conc){
 var si="";
 if(!nombre && !base && !extension && us && con ){
 //ruta="http://52.87.157.53:3000/registro_sin_foto"
-  ruta="http://34.205.17.131:3000/registro_sin_foto"
+  ruta="http://3.133.105.35:3000/registro_sin_foto"
   console.log("registro sin foto");
   si="si";
 }else if(nombre && base && extension && us){
-  ruta="http://34.205.17.131:3000/registro_con_foto"
+  ruta="http://3.133.105.35:3000/registro_con_foto"
   console.log("registro con foto");
   si="si";
 }else{

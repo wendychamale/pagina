@@ -109,11 +109,11 @@ ev.preventDefault();
 var ruta="";
 var si="";
 if(!nombre && !base && !extension && us && con ){
-  ruta="http://34.205.17.131:3000/login"
+  ruta="http://3.133.105.35:3000/login"
   console.log("login sin foto");
   si="si";
 }else if(nombre && base && extension && us){
-  ruta="http://34.205.17.131:3000/login_facial"
+  ruta="http://3.133.105.35:3000/login_facial"
   console.log("login facial");
   si="si";
 }else{

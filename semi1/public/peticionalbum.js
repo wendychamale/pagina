@@ -89,7 +89,7 @@ us= location.search.substring(1,location.search.length);
    }
 var $resultados = document.querySelector("#confirmado");
 $resultados.textContent = "Cargando.....";
-var ruta="http://34.205.17.131:3000/subir_foto_album"
+var ruta="http://3.133.105.35:3000/subir_foto_album"
 console.log("ingresar album");
 var vjson = { name: nombre,base64:base,extension:extension,user:us, id:numero};
 console.log(vjson);
